@@ -56,7 +56,14 @@ manifestLocation:
 name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis
 protocol: []
-relatedResource: []
+relatedResource:
+- identifier: https://doi.org/10.1038/s41593-022-01138-x
+  name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
+    and rate of neurogenesis
+  relation: dcite:IsDescribedBy
+  repository: Nature
+  schemaKey: Resource
+  url: https://www.nature.com/articles/s41593-022-01138-x
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.4
