@@ -71,7 +71,13 @@ description: The incorporation of novel information into the hippocampal network
   of birthdate and the rate of neurogenesis. These observations demonstrate that sequential
   neurogenesis in embryonic development shapes the preconfigured forms of adult network
   dynamics.
-ethicsApproval: []
+ethicsApproval:
+- contactPoint:
+    email: iacuc@nyulangone.org
+    schemaKey: ContactPoint
+    url: https://med.nyu.edu/research/office-science-research/regulatory-compliance-resources/institutional-animal-care-use#:~:text=NYU%20Grossman%20School%20of%20Medicine's,Laboratory%20Animals%E2%80%9D%20and%20the%20National
+  identifier: IA15-01466
+  schemaKey: EthicsApproval
 id: DANDI:000552/draft
 identifier: DANDI:000552
 keywords: []
