@@ -50,7 +50,7 @@ assetsSummary:
   - Units
 citation: Huszár, Roman; Zhang, Yunchang; Blockus, Heike; Buzsáki, György (2023) Preconfigured
   dynamics in the hippocampus are guided by embryonic birthdate and rate of neurogenesis
-  (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000552/draft
+  (Version 0.230630.2304) [Data set]. DANDI archive. https://doi.org/10.48324/dandi.000552/0.230630.2304
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -122,6 +122,7 @@ description: The incorporation of novel information into the hippocampal network
   of birthdate and the rate of neurogenesis. These observations demonstrate that sequential
   neurogenesis in embryonic development shapes the preconfigured forms of adult network
   dynamics.
+doi: 10.48324/dandi.000552/0.230630.2304
 ethicsApproval:
 - contactPoint:
     email: iacuc@nyulangone.org
@@ -129,7 +130,7 @@ ethicsApproval:
     url: https://med.nyu.edu/research/office-science-research/regulatory-compliance-resources/institutional-animal-care-use#:~:text=NYU%20Grossman%20School%20of%20Medicine's,Laboratory%20Animals%E2%80%9D%20and%20the%20National
   identifier: IA15-01466
   schemaKey: EthicsApproval
-id: DANDI:000552/draft
+id: DANDI:000552/0.230630.2304
 identifier: DANDI:000552
 keywords:
 - Hippocampus
@@ -138,7 +139,7 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000552/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000552/0.230630.2304/assets.yaml
 name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis
 protocol: []
@@ -166,6 +167,6 @@ repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.4
 studyTarget: []
-url: https://dandiarchive.org/dandiset/000552/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000552/0.230630.2304
+version: 0.230630.2304
 wasGeneratedBy: []
