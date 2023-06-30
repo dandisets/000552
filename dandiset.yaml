@@ -32,8 +32,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1541618078988
-  numberOfFiles: 107
+  numberOfBytes: 1545387836482
+  numberOfFiles: 117
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
@@ -107,6 +107,7 @@ contributor:
   - dcite:DataCurator
   schemaKey: Person
 dateCreated: '2023-05-23T17:23:37.163308+00:00'
+datePublished: '2023-06-30T23:04:09.703387+00:00'
 description: The incorporation of novel information into the hippocampal network is
   likely be constrained by its innate architecture and internally generated activity
   patterns. However, the origin, organization, and consequences of such patterns remain
@@ -141,6 +142,18 @@ manifestLocation:
 name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis
 protocol: []
+publishedBy:
+  endDate: '2023-06-30T23:04:09.703387+00:00'
+  id: urn:uuid:49d09422-25e3-437b-8ef8-f20d94715b8a
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2023-06-30T23:04:09.703387+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:54e57ab8-86fd-4fbe-a94d-85b76497382c
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1038/s41593-022-01138-x
   name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
