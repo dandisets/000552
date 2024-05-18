@@ -3,8 +3,8 @@
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json
 about:
-- identifier: UBERON:0003881
-  name: CA1 field of hippocampus
+- identifier: UBERON:0002421
+  name: hippocampus
   schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
@@ -147,6 +147,7 @@ relatedResource:
     and rate of neurogenesis
   relation: dcite:IsDescribedBy
   repository: Nature
+  resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/s41593-022-01138-x
 repository: https://dandiarchive.org
