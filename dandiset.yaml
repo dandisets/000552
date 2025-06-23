@@ -49,9 +49,9 @@ assetsSummary:
   - SpatialSeries
   - Position
   - Units
-citation: Huszár, Roman; Zhang, Yunchang; Blockus, Heike; Buzsáki, György (2024) Preconfigured
+citation: Huszár, Roman; Zhang, Yunchang; Blockus, Heike; Buzsáki, György (2025) Preconfigured
   dynamics in the hippocampus are guided by embryonic birthdate and rate of neurogenesis
-  (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000552/draft
+  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000552/draft
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -107,6 +107,11 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- identifier: 0000-0002-0829-4790
+  name: Baker, Cody
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
 dateCreated: '2023-05-23T17:23:37.163308+00:00'
 description: The incorporation of novel information into the hippocampal network is
   likely be constrained by its innate architecture and internally generated activity
@@ -142,7 +147,6 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000552/versions/draft/assets/
 name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis
-protocol: []
 relatedResource:
 - identifier: https://doi.org/10.1038/s41593-022-01138-x
   name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
@@ -155,7 +159,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.4
-studyTarget: []
 url: https://dandiarchive.org/dandiset/000552/draft
 version: draft
 wasGeneratedBy: []
