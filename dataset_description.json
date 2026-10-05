@@ -1,0 +1,26 @@
+{
+    "Name": "Integrated movement tracking for pediatric OPM-MEG studies of intellectual disability",
+    "BIDSVersion": "1.9.0",
+    "HEDVersion": "8.2.0",
+    "DatasetType": "raw",
+    "License": "PD",
+    "Authors": [
+        "John P. Welsh",
+        "Timothy P.L. Roberts"
+    ],
+    "Acknowledgements": "XXX",
+    "Funding": [
+        "R61MH135114"
+    ],
+    "EthicsApprovals": [
+        "Children's Hospital of Philadelphia; IRB #XXXX"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "MNE-BIDS",
+            "Version": "0.19.0",
+            "CodeURL": "https://mne.tools/mne-bids/"
+        }
+    ],
+    "SourceDatasets": []
+}

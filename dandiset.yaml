@@ -26,6 +26,9 @@ assetsSummary:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
+  - identifier: RRID:SCR_016124
+    name: Brain Imaging Data Structure (BIDS)
+    schemaKey: StandardsType
   measurementTechnique:
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
@@ -39,8 +42,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1545387836482
-  numberOfFiles: 117
+  numberOfBytes: 1545387837899
+  numberOfFiles: 119
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
