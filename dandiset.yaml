@@ -42,8 +42,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1545387837899
-  numberOfFiles: 119
+  numberOfBytes: 1545387837992
+  numberOfFiles: 120
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
@@ -118,6 +118,7 @@ contributor:
     name: CatalystNeuro
     schemaKey: Affiliation
   email: garrett.flynn@catalystneuro.com
+  identifier: 0000-0002-7996-8713
   includeInCitation: false
   name: Flynn, Garrett
   roleName:
