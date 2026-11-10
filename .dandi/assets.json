@@ -25390,15 +25390,15 @@
 },
 {
 "asset_id":
-"75a0be1f-61da-4377-bcd0-42dce58cc810",
+"fc1d3cb4-7919-4369-8984-49a0ed2adf99",
 "blob":
-"b6861963-76fc-4b70-b215-1289e5ed053f",
+"b0fca6a7-2910-435a-8d69-c34e631660e9",
 "created":
-"2023-06-30T23:02:44.645924Z",
+"2026-11-10T22:21:59.599104Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -25412,43 +25412,41 @@
 [
 {
 "name":
-"behavioral approach",
+"electrophysiological approach",
 "schemaKey":
 "ApproachType"
 },
 {
 "name":
-"electrophysiological approach",
+"behavioral approach",
 "schemaKey":
 "ApproachType"
 }
 ],
 "blobDateModified":
-"2023-06-30T22:32:25.635000+00:00",
+"2026-11-10T22:21:32.393287Z",
 "contentSize":
-2455041501,
+2402755654,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/75a0be1f-61da-4377-bcd0-42dce58cc810/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/b68/619/b6861963-76fc-4b70-b215-1289e5ed053f"
+"https://api.dandiarchive.org/api/assets/fc1d3cb4-7919-4369-8984-49a0ed2adf99/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/b0f/ca6/b0fca6a7-2910-435a-8d69-c34e631660e9"
 ],
 "dateModified":
-"2023-06-30T23:02:37.541251+00:00",
-"datePublished":
-"2023-06-30T23:04:11.257566+00:00",
+"2026-11-10T22:21:53.877339Z",
 "digest":
 {
 "dandi:dandi-etag":
-"f87cecbd482073d2bf8630d08aec25f1-37",
+"46afd9dd620713cd0d2e1e81820f1e0f-36",
 "dandi:sha2-256":
-"b495df7c1d06231ad6633f097d4159d9d39a07301e882590c03dcb0b86d71395"
+"8b45a40381583c6c4bcd339137354aa3b045358202476a581d8d37d2b1a84553"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:75a0be1f-61da-4377-bcd0-42dce58cc810",
+"dandiasset:fc1d3cb4-7919-4369-8984-49a0ed2adf99",
 "identifier":
-"75a0be1f-61da-4377-bcd0-42dce58cc810",
+"fc1d3cb4-7919-4369-8984-49a0ed2adf99",
 "keywords":
 [
 "Development of the nervous system",
@@ -25459,25 +25457,13 @@
 [
 {
 "name":
-"signal filtering technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
-"behavioral technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
-"surgical technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
 "multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"analytical technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -25489,70 +25475,47 @@
 },
 {
 "name":
-"analytical technique",
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"behavioral technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:11.257566+00:00",
-"id":
-"urn:uuid:76fa30a2-4f41-44a4-85ba-904021772a46",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:11.257566+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:5cf845d9-e935-4905-95ff-322dbcd3d738",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"LFP"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"SpatialSeries"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"Position"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"ElectricalSeries"
+"ElectrodeGroup"
 },
 {
 "schemaKey":
@@ -25564,7 +25527,25 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"ElectrodeGroup"
+"LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Position"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"SpatialSeries"
 },
 {
 "schemaKey":
@@ -25583,7 +25564,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -25615,6 +25596,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -25622,7 +25610,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage and in the spatial alternation task of the figure-8 maze.",
+"endDate":
+"2021-02-01T04:52:31.424000-05:00",
 "identifier":
 "e16_3m1_210201",
 "name":
@@ -25636,15 +25626,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T23:02:37.541211+00:00",
+"2026-11-10T22:21:53.877312Z",
 "id":
-"urn:uuid:70265143-6c3c-4755-92ba-f1d3fb3b2405",
+"urn:uuid:05c0ada8-cbf9-4ebb-9e8b-9bbd384037d9",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T23:02:37.024170+00:00",
+"2026-11-10T22:21:52.779943Z",
 "wasAssociatedWith":
 [
 {
@@ -25657,18 +25647,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:11.262333Z",
+"2026-11-10T22:21:59.599120Z",
 "path":
 "sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb",
 "size":
-2455041501
+2402755654
 },
 {
 "asset_id":
