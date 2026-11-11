@@ -27350,15 +27350,15 @@
 },
 {
 "asset_id":
-"0410c9e8-c6b7-471f-8424-ad99d401bcd0",
+"93de95a2-88cd-4255-b7bf-0b14fc743fd1",
 "blob":
-"d6cdc82b-9cd7-4e46-b512-5c6663e2aa77",
+"533dd9ea-4bd8-4707-861d-6e4813718b67",
 "created":
-"2023-06-30T23:02:43.956113Z",
+"2026-11-11T06:20:51.490921Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -27384,31 +27384,29 @@
 }
 ],
 "blobDateModified":
-"2023-06-30T22:28:09.878000+00:00",
+"2026-11-11T06:20:21.560288Z",
 "contentSize":
-150713841,
+2871738762,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/0410c9e8-c6b7-471f-8424-ad99d401bcd0/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/d6c/dc8/d6cdc82b-9cd7-4e46-b512-5c6663e2aa77"
+"https://api.dandiarchive.org/api/assets/93de95a2-88cd-4255-b7bf-0b14fc743fd1/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/533/dd9/533dd9ea-4bd8-4707-861d-6e4813718b67"
 ],
 "dateModified":
-"2023-06-30T23:02:42.312592+00:00",
-"datePublished":
-"2023-06-30T23:04:11.352631+00:00",
+"2026-11-11T06:20:44.954464Z",
 "digest":
 {
 "dandi:dandi-etag":
-"ef3b118c497bf50035305dc86a97c7eb-3",
+"23d63ccaf2e6e39fab99a549916e0af2-43",
 "dandi:sha2-256":
-"9f15852ff8809a25e074cedff2fb64746c15f2c81d069721a3270a2e75a6488d"
+"c4e323cbe3a3d16d498901d1adc97f66f935cb5d0b8bde13aab526f888994b8b"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:0410c9e8-c6b7-471f-8424-ad99d401bcd0",
+"dandiasset:93de95a2-88cd-4255-b7bf-0b14fc743fd1",
 "identifier":
-"0410c9e8-c6b7-471f-8424-ad99d401bcd0",
+"93de95a2-88cd-4255-b7bf-0b14fc743fd1",
 "keywords":
 [
 "Development of the nervous system",
@@ -27419,19 +27417,25 @@
 [
 {
 "name":
-"behavioral technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
 "surgical technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
 {
 "name":
-"spike sorting technique",
+"behavioral technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -27440,50 +27444,33 @@
 "analytical technique",
 "schemaKey":
 "MeasurementTechniqueType"
+},
+{
+"name":
+"spike sorting technique",
+"schemaKey":
+"MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:11.352631+00:00",
-"id":
-"urn:uuid:05e77956-de9f-43e5-b8b0-7c458daacc42",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:11.352631+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:d9196df1-a396-4ecb-bea5-6766e354aef6",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"SpatialSeries"
-},
 {
 "schemaKey":
 "PropertyValue",
@@ -27494,13 +27481,31 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"Units"
+"LFP"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
 "ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"SpatialSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Units"
 },
 {
 "schemaKey":
@@ -27519,7 +27524,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -27551,6 +27556,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -27558,7 +27570,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage and in the spatial alternation task of the figure-8 maze.",
+"endDate":
+"2021-02-03T05:48:51.360000-05:00",
 "identifier":
 "e16_3m1_210203",
 "name":
@@ -27572,15 +27586,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T23:02:42.312537+00:00",
+"2026-11-11T06:20:44.954437Z",
 "id":
-"urn:uuid:f19e8136-ca7d-4373-b680-6a10c7bc3e8f",
+"urn:uuid:dbe13622-8a1d-4fa8-85b3-42b5fae54a45",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T23:02:42.208732+00:00",
+"2026-11-11T06:20:43.806771Z",
 "wasAssociatedWith":
 [
 {
@@ -27593,18 +27607,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:11.354526Z",
+"2026-11-11T06:20:51.490940Z",
 "path":
 "sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203_behavior+ecephys.nwb",
 "size":
-150713841
+2871738762
 },
 {
 "asset_id":
