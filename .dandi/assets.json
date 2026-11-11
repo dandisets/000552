@@ -3205,15 +3205,15 @@
 },
 {
 "asset_id":
-"979e3acd-36ab-4207-bd5f-74145d9c2ce6",
+"c53b39a6-7edd-4f13-95f7-6c75723492c4",
 "blob":
-"a5f35a22-fa6a-4bb7-b71c-34e50dd65cfc",
+"e8b0c089-6f76-4848-9583-ae8130a1aa63",
 "created":
-"2023-06-30T22:54:12.038568Z",
+"2026-11-11T01:36:51.212101Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -3224,33 +3224,38 @@
 }
 ],
 "approach":
-[],
+[
+{
+"name":
+"electrophysiological approach",
+"schemaKey":
+"ApproachType"
+}
+],
 "blobDateModified":
-"2023-06-30T22:27:21.614000+00:00",
+"2026-11-11T01:36:20.683567Z",
 "contentSize":
-29312867,
+3371759561,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/979e3acd-36ab-4207-bd5f-74145d9c2ce6/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/a5f/35a/a5f35a22-fa6a-4bb7-b71c-34e50dd65cfc"
+"https://api.dandiarchive.org/api/assets/c53b39a6-7edd-4f13-95f7-6c75723492c4/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/e8b/0c0/e8b0c089-6f76-4848-9583-ae8130a1aa63"
 ],
 "dateModified":
-"2023-06-30T22:54:10.497765+00:00",
-"datePublished":
-"2023-06-30T23:04:11.065965+00:00",
+"2026-11-11T01:36:43.654086Z",
 "digest":
 {
 "dandi:dandi-etag":
-"b839e1fddb8ccd6b4126e43d05c5bab7-1",
+"071aefbac909671933e48c2e839130c3-51",
 "dandi:sha2-256":
-"5cc90ff26d55856b291f4e5bc1cdaae6aa2a4de6213f754e9e3fd8ea833c0c27"
+"d868a0324137d5e5dee30fe438fd32a5d71d0d1231932b1e48639a4d3b014fa0"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:979e3acd-36ab-4207-bd5f-74145d9c2ce6",
+"dandiasset:c53b39a6-7edd-4f13-95f7-6c75723492c4",
 "identifier":
-"979e3acd-36ab-4207-bd5f-74145d9c2ce6",
+"c53b39a6-7edd-4f13-95f7-6c75723492c4",
 "keywords":
 [
 "Development of the nervous system",
@@ -3261,52 +3266,83 @@
 [
 {
 "name":
+"surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
 "analytical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"spike sorting technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:11.065965+00:00",
-"id":
-"urn:uuid:6d3ff7ae-e206-42dd-9fc2-59fd9330befc",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:11.065965+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:aa2f55f5-1ecf-4e74-b7e5-7cfdebef35de",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
+"Units"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
 "ProcessingModule"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"LFP"
 }
 ],
 "wasAttributedTo":
@@ -3319,7 +3355,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -3351,6 +3387,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -3358,7 +3401,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage.",
+"endDate":
+"2020-03-05T06:54:44.045967-05:00",
 "identifier":
 "e13_1f1_200305",
 "name":
@@ -3372,15 +3417,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T22:54:10.497749+00:00",
+"2026-11-11T01:36:43.654057Z",
 "id":
-"urn:uuid:1c9ac5d2-f362-4b61-bf7a-aa7e94f37f3a",
+"urn:uuid:a457ac75-b263-4570-99c9-fdaf405b02e0",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T22:54:10.474463+00:00",
+"2026-11-11T01:36:42.594615Z",
 "wasAssociatedWith":
 [
 {
@@ -3393,18 +3438,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:11.067627Z",
+"2026-11-11T01:36:51.212114Z",
 "path":
 "sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb",
 "size":
-29312867
+3371759561
 },
 {
 "asset_id":
@@ -14129,15 +14174,15 @@
 },
 {
 "asset_id":
-"e81769f8-2620-4d01-a43d-5c857f4026f4",
+"af68069e-9f18-49c6-99a2-1f19187cca4d",
 "blob":
-"cb2da39d-1be7-4524-a8b0-2e0adc6bac35",
+"da94b8d9-d615-43ba-b5fe-e79d75ab85f9",
 "created":
-"2023-06-30T22:58:07.212446Z",
+"2026-11-11T01:35:56.132711Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -14163,31 +14208,29 @@
 }
 ],
 "blobDateModified":
-"2023-06-30T22:29:49.742000+00:00",
+"2026-11-11T01:35:28.373925Z",
 "contentSize":
-113069115,
+2491721145,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/e81769f8-2620-4d01-a43d-5c857f4026f4/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/cb2/da3/cb2da39d-1be7-4524-a8b0-2e0adc6bac35"
+"https://api.dandiarchive.org/api/assets/af68069e-9f18-49c6-99a2-1f19187cca4d/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/da9/4b8/da94b8d9-d615-43ba-b5fe-e79d75ab85f9"
 ],
 "dateModified":
-"2023-06-30T22:58:02.311466+00:00",
-"datePublished":
-"2023-06-30T23:04:10.975445+00:00",
+"2026-11-11T01:35:50.318037Z",
 "digest":
 {
 "dandi:dandi-etag":
-"c7ad932e5aa8280a2b7da5e8a2ddb6a0-2",
+"33a1b0207c80f009c523218c3db8fa52-38",
 "dandi:sha2-256":
-"55fb457182dd0ee063e30ec0ecaa34c5e92a538d399358802fde7bd09b73d8d2"
+"e23bd17d8f1f14fe4453954fab31d945a4c35841703e864ec9324a689bbad9d0"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:e81769f8-2620-4d01-a43d-5c857f4026f4",
+"dandiasset:af68069e-9f18-49c6-99a2-1f19187cca4d",
 "identifier":
-"e81769f8-2620-4d01-a43d-5c857f4026f4",
+"af68069e-9f18-49c6-99a2-1f19187cca4d",
 "keywords":
 [
 "Development of the nervous system",
@@ -14198,7 +14241,13 @@
 [
 {
 "name":
-"behavioral technique",
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"spike sorting technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -14210,7 +14259,13 @@
 },
 {
 "name":
-"spike sorting technique",
+"behavioral technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -14223,51 +14278,34 @@
 ],
 "path":
 "sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200719_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:10.975445+00:00",
-"id":
-"urn:uuid:68c383ae-5180-4f1f-9d7d-190e511c8cd5",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:10.975445+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:7a7b55ac-69b0-4398-80ab-446d68383862",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"SpatialSeries"
+"ElectrodeGroup"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"Position"
+"SpatialSeries"
 },
 {
 "schemaKey":
@@ -14279,7 +14317,19 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"ElectrodeGroup"
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Position"
 },
 {
 "schemaKey":
@@ -14298,7 +14348,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -14330,6 +14380,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -14337,7 +14394,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage and in the spatial alternation task of the figure-8 maze.",
+"endDate":
+"2020-07-19T05:06:18.176000-04:00",
 "identifier":
 "e15_10m1_200719",
 "name":
@@ -14351,15 +14410,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T22:58:02.311433+00:00",
+"2026-11-11T01:35:50.318010Z",
 "id":
-"urn:uuid:01b9cb01-4bd0-4094-a849-8320834a1454",
+"urn:uuid:cfc69c60-2077-45ba-8e7a-6f86fe40d137",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T22:58:02.110201+00:00",
+"2026-11-11T01:35:49.205350Z",
 "wasAssociatedWith":
 [
 {
@@ -14372,18 +14431,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:10.977214Z",
+"2026-11-11T01:35:56.132730Z",
 "path":
 "sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200719_behavior+ecephys.nwb",
 "size":
-113069115
+2491721145
 },
 {
 "asset_id":
@@ -22170,15 +22229,15 @@
 },
 {
 "asset_id":
-"346ad598-f6c5-4946-8657-bafc6eb4fadc",
+"6475fe14-33b2-43d2-aa03-a29c3b28dad4",
 "blob":
-"3a27417b-3a48-40a9-a108-c404e099d01f",
+"1bc853be-b646-410f-957b-609ccc34fbcf",
 "created":
-"2023-06-30T23:00:53.287927Z",
+"2026-11-11T01:31:49.367316Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -22204,31 +22263,29 @@
 }
 ],
 "blobDateModified":
-"2023-06-30T22:29:21.186000+00:00",
+"2026-11-11T01:31:22.518291Z",
 "contentSize":
-125756910,
+2597071995,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/346ad598-f6c5-4946-8657-bafc6eb4fadc/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/3a2/741/3a27417b-3a48-40a9-a108-c404e099d01f"
+"https://api.dandiarchive.org/api/assets/6475fe14-33b2-43d2-aa03-a29c3b28dad4/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/1bc/853/1bc853be-b646-410f-957b-609ccc34fbcf"
 ],
 "dateModified":
-"2023-06-30T23:00:50.057969+00:00",
-"datePublished":
-"2023-06-30T23:04:11.034536+00:00",
+"2026-11-11T01:31:43.057718Z",
 "digest":
 {
 "dandi:dandi-etag":
-"5469c64e02028d81a8a38048b23d156e-2",
+"ee9255a65d86ab369ca82bcdd2ef044a-39",
 "dandi:sha2-256":
-"9a41c7d4dc8e3cca688ac11481806b4e3abaf2cd7b25e24dcb726b6cb05c51cc"
+"57183c7cf6e76bb3d3d74404c28b3f18eca4103087e59a6a3e99a56f48076fb5"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:346ad598-f6c5-4946-8657-bafc6eb4fadc",
+"dandiasset:6475fe14-33b2-43d2-aa03-a29c3b28dad4",
 "identifier":
-"346ad598-f6c5-4946-8657-bafc6eb4fadc",
+"6475fe14-33b2-43d2-aa03-a29c3b28dad4",
 "keywords":
 [
 "Development of the nervous system",
@@ -22237,6 +22294,24 @@
 ],
 "measurementTechnique":
 [
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"analytical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
 {
 "name":
 "behavioral technique",
@@ -22254,61 +22329,32 @@
 "spike sorting technique",
 "schemaKey":
 "MeasurementTechniqueType"
-},
-{
-"name":
-"analytical technique",
-"schemaKey":
-"MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200918_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:11.034536+00:00",
-"id":
-"urn:uuid:b8c40bf2-0b2b-4aa5-afc5-0f9516c03d9f",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:11.034536+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:ad588110-1fdc-4e33-b7fd-3da5c1ef7851",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"SpatialSeries"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"Position"
+"LFP"
 },
 {
 "schemaKey":
@@ -22320,13 +22366,31 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"ElectrodeGroup"
+"ProcessingModule"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"ProcessingModule"
+"SpatialSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Position"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectrodeGroup"
 }
 ],
 "wasAttributedTo":
@@ -22339,7 +22403,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -22371,6 +22435,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -22378,7 +22449,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage and in the spatial alternation task of the figure-8 maze.",
+"endDate":
+"2020-09-18T05:26:48.544000-04:00",
 "identifier":
 "e16_1f1_200918",
 "name":
@@ -22392,15 +22465,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T23:00:50.057954+00:00",
+"2026-11-11T01:31:43.057689Z",
 "id":
-"urn:uuid:16c8a779-c71d-4111-8881-13b32ef790ab",
+"urn:uuid:f7a96b0a-a911-4947-b9e0-a61b1fea30b0",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T23:00:50.052280+00:00",
+"2026-11-11T01:31:42.241625Z",
 "wasAssociatedWith":
 [
 {
@@ -22413,18 +22486,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:11.036336Z",
+"2026-11-11T01:31:49.367330Z",
 "path":
 "sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200918_behavior+ecephys.nwb",
 "size":
-125756910
+2597071995
 },
 {
 "asset_id":
@@ -24234,15 +24307,15 @@
 },
 {
 "asset_id":
-"a4a466ba-dbb0-43bd-9b0e-fe9dd4057bdd",
+"ea630250-4619-4ff1-a27a-d52ee06ccd4b",
 "blob":
-"821342fd-5bbc-48d4-ac80-c62ea981ef32",
+"863a5ab6-1394-4bda-912e-7e8a89fe7ee5",
 "created":
-"2023-06-30T23:01:50.902370Z",
+"2026-11-11T01:36:22.472231Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.4/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -24268,31 +24341,29 @@
 }
 ],
 "blobDateModified":
-"2023-06-30T22:28:11.395000+00:00",
+"2026-11-11T01:35:57.023742Z",
 "contentSize":
-63121481,
+2448269117,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/a4a466ba-dbb0-43bd-9b0e-fe9dd4057bdd/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/821/342/821342fd-5bbc-48d4-ac80-c62ea981ef32"
+"https://api.dandiarchive.org/api/assets/ea630250-4619-4ff1-a27a-d52ee06ccd4b/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/863/a5a/863a5ab6-1394-4bda-912e-7e8a89fe7ee5"
 ],
 "dateModified":
-"2023-06-30T23:01:47.802652+00:00",
-"datePublished":
-"2023-06-30T23:04:11.243710+00:00",
+"2026-11-11T01:36:16.691707Z",
 "digest":
 {
 "dandi:dandi-etag":
-"b7d2c8daffd7b17cba40293e8a436962-1",
+"5971b1504a6f31ae3c5eff5b02c45498-37",
 "dandi:sha2-256":
-"4b58e19d464704e2a4a64f1cead89275681840557fcb592a327dd5d920786abf"
+"f09740d344f577dfdc8c08310f9c703dd04124bf2f3ccfeeab51ae9e467d81a3"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:a4a466ba-dbb0-43bd-9b0e-fe9dd4057bdd",
+"dandiasset:ea630250-4619-4ff1-a27a-d52ee06ccd4b",
 "identifier":
-"a4a466ba-dbb0-43bd-9b0e-fe9dd4057bdd",
+"ea630250-4619-4ff1-a27a-d52ee06ccd4b",
 "keywords":
 [
 "Development of the nervous system",
@@ -24303,7 +24374,7 @@
 [
 {
 "name":
-"behavioral technique",
+"spike sorting technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -24315,7 +24386,7 @@
 },
 {
 "name":
-"spike sorting technique",
+"multi electrode extracellular electrophysiology recording technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -24324,44 +24395,45 @@
 "analytical technique",
 "schemaKey":
 "MeasurementTechniqueType"
+},
+{
+"name":
+"behavioral technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2023-06-30T23:04:11.243710+00:00",
-"id":
-"urn:uuid:d309b16c-b030-4fd7-92c7-1fd1a37f63ce",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2023-06-30T23:04:11.243710+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:0bd33372-01b8-4027-95a7-3e551756c697",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1038/s41593-022-01138-x",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.4",
+"0.7.0",
 "variableMeasured":
 [
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Units"
+},
 {
 "schemaKey":
 "PropertyValue",
@@ -24372,13 +24444,13 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"Position"
+"ElectricalSeries"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"Units"
+"ProcessingModule"
 },
 {
 "schemaKey":
@@ -24390,7 +24462,13 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"ProcessingModule"
+"LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"Position"
 }
 ],
 "wasAttributedTo":
@@ -24403,7 +24481,7 @@
 "unitText":
 "ISO-8601 duration",
 "value":
-"P3M/P6M",
+"/",
 "valueReference":
 {
 "schemaKey":
@@ -24435,6 +24513,13 @@
 "Mus musculus - House mouse",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"C57BL/6",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -24442,7 +24527,9 @@
 [
 {
 "description":
-"The incorporation of new information into the hippocampal network is likely to be constrained by its innate architecture and internally generated activity patterns. However, the origin, organization and consequences of such patterns remain poorly understood. In the present study we show that hippocampal network dynamics are affected by sequential neurogenesis. We birthdated CA1 pyramidal neurons with in utero electroporation over 4 embryonic days, encompassing the peak of hippocampal neurogenesis, and compared their functional features in freely moving adult mice. Neurons of the same birthdate displayed distinct connectivity, coactivity across brain states and assembly dynamics. Same-birthdate neurons exhibited overlapping spatial representations, which were maintained across different environments. Overall, the wiring and functional features of CA1 pyramidal neurons reflected a combination of birthdate and the rate of neurogenesis. These observations demonstrate that sequential neurogenesis during embryonic development shapes the preconfigured forms of adult network dynamics.",
+"Recording from a 64-channel silicon probe in CA1, with light pulses for optogenetic tagging of the birthdated pyramidal neurons, in the home cage and in the spatial alternation task of the figure-8 maze.",
+"endDate":
+"2020-11-19T05:08:57.280000-05:00",
 "identifier":
 "e16_2m1_201119",
 "name":
@@ -24456,15 +24543,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2023-06-30T23:01:47.802619+00:00",
+"2026-11-11T01:36:16.691680Z",
 "id":
-"urn:uuid:4f3969c4-ca2c-46d7-a01b-1f0af549d336",
+"urn:uuid:71dcf041-7d5c-415b-8fbf-465e3bc2644a",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2023-06-30T23:01:47.473675+00:00",
+"2026-11-11T01:36:15.930612Z",
 "wasAssociatedWith":
 [
 {
@@ -24477,18 +24564,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.55.1"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2023-06-30T23:04:11.245445Z",
+"2026-11-11T01:36:22.472245Z",
 "path":
 "sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb",
 "size":
-63121481
+2448269117
 },
 {
 "asset_id":
