@@ -33,14 +33,14 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  - name: analytical technique
-    schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1800779088887
-  numberOfFiles: 115
+  numberOfBytes: 1791760822197
+  numberOfFiles: 112
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
