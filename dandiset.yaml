@@ -30,19 +30,19 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: surgical technique
-    schemaKey: MeasurementTechniqueType
-  - name: multi electrode extracellular electrophysiology recording technique
-    schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
     schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1659112214140
+  numberOfBytes: 1630563478816
   numberOfFiles: 117
   numberOfSubjects: 17
   schemaKey: AssetsSummary
@@ -51,9 +51,9 @@ assetsSummary:
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
+  - LFP
   - ElectricalSeries
   - ElectrodeGroup
-  - LFP
   - Units
   - SpatialSeries
   - Position
