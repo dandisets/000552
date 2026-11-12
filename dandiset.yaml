@@ -39,8 +39,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1682874387347
-  numberOfFiles: 114
+  numberOfBytes: 1800779088887
+  numberOfFiles: 115
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
@@ -152,7 +152,9 @@ description: The incorporation of novel information into the hippocampal network
   the wiring and functional features of CA1 pyramidal neurons reflected a combination
   of birthdate and the rate of neurogenesis. These observations demonstrate that sequential
   neurogenesis in embryonic development shapes the preconfigured forms of adult network
-  dynamics.
+  dynamics. The paper's single-cell, pair, connection and assembly analyses use 96
+  sessions of 15 mice; the sessions of mice e15-13f1 and e16-3m2 enter only the novel-environment
+  analyses of Figure 6.
 ethicsApproval:
 - contactPoint:
     email: iacuc@nyulangone.org
