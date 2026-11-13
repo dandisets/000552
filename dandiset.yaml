@@ -57,7 +57,7 @@ assetsSummary:
   - SpatialSeries
 citation: Huszár, Roman; Zhang, Yunchang; Blockus, Heike; Buzsáki, György (2026) Preconfigured
   dynamics in the hippocampus are guided by embryonic birthdate and rate of neurogenesis
-  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/000552/draft
+  (Version 0.261113.1035) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.000552/0.261113.1035
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -139,6 +139,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2023-05-23T17:23:37.163308+00:00'
+datePublished: '2026-11-13T10:35:38.620304+00:00'
 description: The incorporation of novel information into the hippocampal network is
   likely be constrained by its innate architecture and internally generated activity
   patterns. However, the origin, organization, and consequences of such patterns remain
@@ -155,6 +156,7 @@ description: The incorporation of novel information into the hippocampal network
   dynamics. The paper's single-cell, pair, connection and assembly analyses use 96
   sessions of 15 mice; the sessions of mice e15-13f1 and e16-3m2 enter only the novel-environment
   analyses of Figure 6.
+doi: 10.48324/dandi.000552/0.261113.1035
 ethicsApproval:
 - contactPoint:
     email: iacuc@nyulangone.org
@@ -163,7 +165,7 @@ ethicsApproval:
       https://med.nyu.edu/research/office-science-research/regulatory-compliance-resources/institutional-animal-care-use#:~:text=NYU%20Grossman%20School%20of%20Medicine's,Laboratory%20Animals%E2%80%9D%20and%20the%20National
   identifier: IA15-01466
   schemaKey: EthicsApproval
-id: DANDI:000552/draft
+id: DANDI:000552/0.261113.1035
 identifier: DANDI:000552
 keywords:
 - Hippocampus
@@ -174,9 +176,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000552/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000552/0.261113.1035/assets.yaml
 name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
   and rate of neurogenesis
+publishedBy:
+  endDate: '2026-11-13T10:35:38.620304+00:00'
+  id: urn:uuid:f74bdaf5-c987-405c-8128-de283a456ccb
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-13T10:35:38.620304+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:36b4fd7b-6c6d-44f8-a938-5c204ef520e9
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1038/s41593-022-01138-x
   name: Preconfigured dynamics in the hippocampus are guided by embryonic birthdate
@@ -186,9 +200,68 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/s41593-022-01138-x
+releaseNotes: "## Changes since version 0.230630.2304\n\nThe 104 processed files were
+  re-converted from the lab's source files with a new NeuroConv conversion ([catalystneuro/buzsaki-lab-to-nwb](https://github.com/catalystneuro/buzsaki-lab-to-nwb),
+  PR [#95](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/95)), and 11 raw
+  files were rebuilt from the published raw files' wide-band data. The two earlier
+  raw files that held only LFP and no wide-band signal (e15-13f1-220117 and e16-3m2-211211)
+  were removed: their LFP is now in the processed files. The conversion fixes problems
+  found by a reproduction attempt ([issue #83](https://github.com/catalystneuro/buzsaki-lab-to-nwb/issues/83)).
+  The same sessions and file names are kept.\n\n**Corrections**\n\n- **Left and right.**
+  `visited_arm` and `expected_arm` had left and right swapped: every right reward
+  falls in a trial the lab codes 1, which the earlier conversion called left. 1 is
+  now right, and the rewards are an events table with an `arm` column.\n- **Familiar
+  maze.** `is_familiar_maze` now comes from each trial's sub-session; it was wrong
+  in one-maze sessions (e16_3m1_210201: 28 of 30 familiar trials were marked unfamiliar).\n
+  - **Ripples.** The ripple maps were shifted by one row: the first row was empty,
+  each row held the previous ripple's map and the last map was lost. They are now
+  stored row for row.\n- **LFP scaling.** e16_3m1_210201's LFP was labelled 30 kHz
+  and scaled twice. All signals now use the session's rates and `leastSignificantBit`
+  (0.195 µV per step; the `.xml`'s 0.305 µV is a template value).\n- **Electrode groups.**
+  Units are linked to the electrode groups the electrodes use (\"Group N\"; units
+  said \"Group1\").\n- **Subject.** The age is the paper's 3 to 6 months for the implanted
+  mice (P3M/P6M), with that source in the description; sex comes from the subject
+  id; the electroporation day is in the description; the session date comes from the
+  session id.\n\n**Additions**\n\n- **Light-responsive units.** A `light_responsive`
+  column marks the pyramidal neurons the paper calls light-responsive (birthdated):
+  SALT P <= 0.001 and the reliability test passed, as in the Methods; with it the
+  files give the paper's counts. `shank_id` is described as the lab's electrode group,
+  which on some probes is half a shank; the electrodes table gives the physical shank.\n
+  - **Units for every session with a sorting**, including the six home-cage mice that
+  had none, with each unit's largest-waveform channel and mean waveform, and, where
+  the lab's `cell_metrics` exists, the putative cell type, trough-to-peak, ACG rise
+  time, firing rate and the optogenetic tagging statistics (`p_salt`, `h_reliable`,
+  `int_ratemod` and its p-value).\n- **Light pulses** for optogenetic tagging (`OptogeneticPulses`,
+  with start, stop, amplitude and event id, and `OptogeneticPulsePeriods`), which
+  were never converted.\n- **LFP in every processed file** whose session has a `.lfp`
+  (before, most processed files had none; the LFP was only in the 13 raw files).\n
+  - **Position** of the open fields, and position per sub-session: in cm for the familiar
+  figure-8 maze, and in the source's own units elsewhere, with the value range in
+  the description.\n- **Epochs** named by sub-session, with `environment` and `task`
+  columns. Maze sub-sessions that the lab's session file does not list are added from
+  the tracking or behavior files (for example e14-2m3-201017's maze period, and both
+  sub-sessions of e13-26m1-211116, whose session file lists none). Sessions with no
+  sub-session in any source file have no epochs table.\n- **Electrodes** with location
+  CA1, `rel_x`/`rel_y`, shank, probe side and bad-channel flags.\n- **Sleep states**
+  with HED tags (WAKE: Awake; NREM: Asleep; REM: Asleep and the SCORE library's Sleep-stage-REM),
+  and **ontology terms** (HERD) for the species, sex, CA1 and the cell types.\n- **Chunking
+  for streaming.** Signals are stored in chunks of at most 16 channels and 8.7 s of
+  the wide-band signal (2^18 samples, 8.4 MB) or 52 s of LFP (2^16 samples, 2.1 MB),
+  so that both a short window of all channels and one channel over a long stretch
+  read little more than they need; other datasets are in chunks of about 8 MB.\n-
+  **Raw files** keep the published wide-band samples unchanged (checked sample for
+  sample), now chunked for streaming and with the corrected electrodes and epochs.\n
+  \n**Known gaps**\n\n- No source gives each mouse's age; the files give the paper's
+  range for the group.\n- The `.dat` wide-band files of the sessions without a published
+  raw file were not added.\n- `cell_metrics`, and with it the cell types, the tagging
+  statistics and `light_responsive`, exists for only some sessions.\n- The scale of
+  x and y outside the familiar maze, and whether the reward events mark water delivery
+  or arrival at the reward corner, are not stated in the source.\n- The paper's main
+  analyses use 96 sessions of 15 mice; mice e15-13f1 and e16-3m2 appear only in the
+  novel environments of Fig. 6."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.4
-url: https://dandiarchive.org/dandiset/000552/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000552/0.261113.1035
+version: 0.261113.1035
 wasGeneratedBy: []
