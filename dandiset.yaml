@@ -39,8 +39,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1794307874597
-  numberOfFiles: 114
+  numberOfBytes: 1597807495946
+  numberOfFiles: 113
   numberOfSubjects: 17
   schemaKey: AssetsSummary
   species:
@@ -48,8 +48,8 @@ assetsSummary:
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ElectrodeGroup
   - ElectricalSeries
+  - ElectrodeGroup
   - ProcessingModule
   - Units
   - LFP
